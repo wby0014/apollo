@@ -22,7 +22,7 @@ public class DeferredResultWrapper {
      */
     private static final long TIMEOUT = 60 * 1000; //60 seconds
     /**
-     * 未修改时的 ResponseEntity 响应，使用 302 状态码。
+     * 未修改时的 ResponseEntity 响应，使用 304 状态码。
      */
     private static final ResponseEntity<List<ApolloConfigNotification>> NOT_MODIFIED_RESPONSE_LIST = new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
 
