@@ -32,6 +32,8 @@ public class DeferredResultWrapper {
     private Map<String, String> normalizedNamespaceNameToOriginalNamespaceName;
     /**
      * 响应的 DeferredResult 对象
+     * 参考springMvc中DispatcherServlet#doDispatch是如何处理DeferredResult的这个返回值的
+     * 见WebAsyncManager#startDeferredResultProcessing方法
      */
     private DeferredResult<ResponseEntity<List<ApolloConfigNotification>>> result;
 
